@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://ceuservices.com/sitemap.xml

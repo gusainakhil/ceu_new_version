@@ -1,0 +1,29 @@
+[21-May-2025 11:07:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function format() on string in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php on line 81
+[21-May-2025 11:07:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function format() on string in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php on line 81
+[21-May-2025 11:07:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function format() on string in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php on line 81
+[21-May-2025 11:07:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function format() on string in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php on line 81
+[21-May-2025 11:07:47 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function format() on string in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php on line 81
+[21-May-2025 11:07:47 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function format() on string in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/fetch_course_detail.php on line 81
+[21-May-2025 11:36:04 America/New_York] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home/orhiqts3sfbi/public_html/ceuservices.com/api/webinar_fetch.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/orhiqts3sfbi/public_html/ceuservices.com/api/webinar_fetch.php on line 35
+[21-May-2025 15:59:45 America/New_York] Raw data received: 
