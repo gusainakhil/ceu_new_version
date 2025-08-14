@@ -186,7 +186,7 @@ if (!empty($_SESSION['email']) && !empty($_SESSION['password'])) {
         </div>
         <section class="checkout-page-area section-gap-equal">
             <div class="container">
-                <form id="checkout_form" method="POST" action="checkout_process.php">
+                <form id="checkout_form" method="POST" action="checkout_process.php" onsubmit="disableBtn()">
                     <div class="checkout-notice">
                         <div class="coupn-box">
                             <h6 class="toggle-bar"> Have a coupon?
@@ -381,7 +381,7 @@ if (!empty($_SESSION['email']) && !empty($_SESSION['password'])) {
                             <input type="hidden" name="payer_email" id="payer_email" value="<?php echo !empty($_SESSION['email']) ? $_SESSION['email'] : ''; ?>">
                             <!-- please build a $ord in unique way like today date + time  -->
                              <?php
-                             $ord_id = 'ORD-' . date('YmdHis');
+                             $ord_id = date('YmdHis');
                              ?>
                             <input type="hidden" name="item_number" id="order_id" value='<?php echo $ord_id; ?>'>
                             <input type="hidden" name="amount" id="course_price" value="<?php echo $price ?>">
@@ -584,6 +584,11 @@ if (!empty($_SESSION['email']) && !empty($_SESSION['password'])) {
         // });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+function disableBtn() {
+  document.getElementById('submitBtn').disabled = true;
+}
+</script>
     <!-- <script>
         $(document).ready(function() {
             $(".auto-save").on("input", function() {

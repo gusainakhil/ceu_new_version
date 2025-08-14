@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $attendeeStmt = $con->prepare("INSERT INTO ceu_attende_details (order_id, name, email, jobtitle, number) VALUES (?, ?, ?, ?, ?)");
         foreach ($attendees as $attendee) {
             $attendeeStmt->bind_param(
-                "issss",
+                "sssss",
                 $order_id, // Use the fetched order_id
                 $attendee['name'],
                 $attendee['email'],

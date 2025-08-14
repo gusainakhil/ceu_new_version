@@ -80,10 +80,7 @@ if ($stmt->num_rows > 0) {
     // sendemail($con, $email, $passwd);
 }
 
-// 4) Generate Order ID if not provided
-if (empty($order_id)) {
-    $order_id = 'ORD-' . strtoupper(random($email)); // functions.php 
-}
+
 $order_status = 'Pending'; 
 $order_date   = date("Y-m-d H:i:s");
 
@@ -94,11 +91,13 @@ $ins_order = $con->prepare("INSERT INTO order_details
 $empty_str = '';
 $zero_val  = 0;
 $payment_status = 'Incomplete'; // Initially set to Incomplete
+// $payment_status = 'Completed'; // Uncomment if you want to set it as completed initially
+// $amount = 0; // Assuming this is the total amount after applying any coupon
 // $selling_options = ''; // Assuming this is a string of options, adjust as needed
 
 $ins_order->bind_param(
-    "issiissssssssssssssss",
-    $user_id,
+    "ississsssssssssssssss",
+    $user_id,   
     $course_id,
     $order_id,
     $amount,
@@ -121,6 +120,7 @@ $ins_order->bind_param(
     $cart_hash_id,
 
 );
+
 $ins_order->execute();
 $ins_order->close();
 
@@ -141,7 +141,7 @@ foreach ($user_names as $idx => $att_name) {
     $att_job   = $job_titles[$idx] ?? '';
 
     $ins_attendee->bind_param(
-        "ssssi",
+        "sssss",
         $att_name,
         $att_email,
         $att_phone,
@@ -177,3 +177,4 @@ $params = [
 
 header("Location: {$paypal_url}?" . http_build_query($params));
 exit;
+    

@@ -97,7 +97,8 @@ include "functions.php";
                                 <input type="checkbox" id="remember-me">
                                 <label for="remember-me">Remember Me</label>
                             </div>
-                            <!-- <a href="#" class="password-reset">Lost your password?</a> -->
+
+                            <a href="forgot_password.php" class="password-reset">Lost your password?</a>
                             <input type="hidden" name="type" value="login">
                         </div>
                         <div class="form-group">
