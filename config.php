@@ -15,7 +15,7 @@
 // define('DB_NAME', 'ceu'); 
 // // Change not required 
 // define('PAYPAL_URL', (PAYPAL_SANDBOX == FALSE)?"https://www.paypal.com/cgi-bin/webscr":"https://www.paypal.com/cgi-bin/webscr");
-s
+
 
 define('PAYPAL_ID', 'sb-wbt7s18076716@business.example.com'); 
 define('PAYPAL_SANDBOX', FALSE); //TRUE or FALSE 
