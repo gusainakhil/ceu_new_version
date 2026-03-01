@@ -8,7 +8,7 @@
 
 
 <?php
-// require_once __DIR__ . '/allow-us-only.php';
+// require_once __DIR__ . '/allow-us-only';
 
 $temp_hash_id = "";
 if (!empty($_SESSION['hash_id'])) {

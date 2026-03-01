@@ -1,138 +1,477 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://ceuservices.com/</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://ceuservices.com/</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/login</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/login</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/about</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/subscription</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/webinar</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/webinar</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speakers</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/speakers</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/becomeSpeaker</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/becomeSpeaker</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/contact</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/contact</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/faq</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/faq</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/cart</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/cart</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/index</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/index</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/webinar.php</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/about</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/becomeSpeaker.php</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/webinar.php</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/course-details.php?id=navigating-the-overlap-between-ada-fmla-and-workers-comp-in-2024-investigating-abuse-challenges-benefits-and-legal-requirements</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/becomeSpeaker.php</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/course-details.php?id=dols-new-final-rule-on-independent-contractor-vs-employee-status-benefits-drawbacks-w-2s-vs-1099s</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/course-details.php?id=irs-finalizes-2026-form-w-4-whats-changed-and-what-employers-should-do</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/course-details.php?id=employee-handbooks-nlrb-scrutiny-2024-from-the-pump-act-to-stericycle-what-you-need-to-know-for-2024</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/course-details.php?id=2026-form-i-9-and-e-verify-deadline-updates-for-the-1st-quarter-ensure-employers-and-professionals-are-compliant</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/contact.php</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/course-details.php?id=payroll-deductions-2026-update-what-can-and-cannot-be-deducted-from-wages</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/about.php</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/contact.php</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/terms-condition.php</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/terms-condition</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/privacy-policy.php</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ceuservices.com/privacy-policy</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/course-details.php?id=understanding-eeoc-final-rule-on-pregnant-workers-fairness-act-implementing-complying-pwfa-in-the-workplace</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/forgot_password.php</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/course-details.php?id=2024-new-form-i-9-how-to-conduct-an-i-9-internal-audit-with-all-the-changes-made-to-the-new-i-9-form</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/checkout2.php?plan=A&amp;price=299</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speaker-detail.php?id=1</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/checkout2.php?plan=B&amp;price=355</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speaker-detail.php?id=2</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/checkout2.php?plan=C&amp;price=399</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speaker-detail.php?id=3</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/course-details.php?id=employee-handbooks-2026-preparing-for-compliance-reduce-risk-instead-of-creating-it</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speaker-detail.php?id=4</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/course-details.php?id=major-changes-in-form-w-2-and-form-1099-for-2026-compliance-learn-how-to-mitigate-irs-new-requirements</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speaker-detail.php?id=5</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/course-details.php?id=navigating-fmla-compliance-in-2026-a-comprehensive-guide-to-employers-for-effective-implementation</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://ceuservices.com/speaker-detail.php?id=6</loc>
-<lastmod>2024-08-15T18:02:13+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ceuservices.com/course-details.php?id=1099-reporting-compliance-essentials-for-2026-new-irs-rules-obbb-changes-crypto-reporting</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=ringing-in-the-new-year-taxwise-payroll-tax-changes-for-2026-form-w-2-form-w-4-publication-1494-for-2026</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=wage-deductions-in-2026-what-you-can-and-cannot-deduct-from-an-employees-wages</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=behavioral-issues-conflict-and-incivility-in-the-workplace-in-2025-and-beyond-best-practices-coping-strategies-and-tips</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=mastering-1099-compliance-in-2026-new-irs-rules-obbb-changes-crypto-reporting-demystified</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=deductions-in-2026-what-you-can-and-cant-deduct-from-an-employees-wages</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=marijuana-in-the-workplace-clearing-the-haze-on-employer-employee-rights-policies-compliance-and-best-practices</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employee-discipline-termination-avoiding-legal-risks-and-costly-mistakes</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dos-and-donts-of-documenting-employee-behavior-performance-and-discipline-withstanding-legal-challenges-in-2025</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=fmla-compliance-in-2025-a-comprehensive-guide-strategies-for-effective-implementation</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=fmla-ada-pwfa-title-vii-workers-comp-in-2025-navigating-overlap-interactive-processes-investigating-abuse</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=documenting-employee-behavior-performance-and-discipline-dos-and-donts-for-withstanding-legal-challenges-in-2025</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=obbb-fringe-benefit-updates-for-2025-irs-compliance-executive-perks-payroll-tax-traps</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=creating-a-safe-compliant-workplace-in-2025-preventing-harassment-bullying-violence-including-new-fca-conduct-rules</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=ringing-in-the-new-year-taxwise-mid-year-payroll-tax-changes-for-2025</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=the-one-big-beautiful-bill-obbb-act-explained-a-compliance-toolkit-for-employers-for-2025s-historic-workforce-reform</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=how-the-obbb-will-impact-immigration-enforcement-guidelines-for-employers-to-preventing-handling-ice-raids</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=how-to-document-employee-behavior-performance-and-discipline-protect-your-company-from-legal-challenges</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=the-one-big-beautiful-bill-obbb-is-now-the-law-how-will-it-impact-the-workplace</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dol-gives-extra-leeway-for-independent-contractor-classification-who-should-be-an-independent-contractor-in-2025-w-2s-vs-1099s</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=exempt-v-non-exempt-employee-the-flsa-overtime-rules-the-difference-and-why-it-matters</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=2025-immigration-concerns-ice-audits-vs-raids-what-employers-should-know-prepare-for</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=pay-transparency-and-equity-compliance-2025-build-trust-retain-talent-and-avoid-legal-pitfalls-with-your-compensation</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dol-reverses-course-on-independent-contractor-rule-for-2025-how-will-employers-adapt-to-the-change</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=uscis-released-new-i-9-form-for-2025-learn-why-it-is-launched-and-what-the-changes-are-</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=travel-pay-compliance-2025-overview-latest-updates-and-simplification-of-federal-taxation-rules</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=eeo-1-reporting-opens-may-20-2025-key-changes-employers-must-know-to-stay-compliant</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=wage-deduction-in-2025-what-you-can-and-cannot-deduct-from-an-employee-wage</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=fmla-compliance-2025-a-comprehensive-guide-strategies-for-effective-implementation</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=the-w-2c-and-941-x-2024-2025-updates-on-how-to-correct-your-w-2s-and-941s-properly</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=irs-releases-form-941-whats-next-for-2025-key-changes-and-updates-that-you-must-know</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=managing-the-legal-landmine-of-the-fmla-ada-and-workers-compensation-in-the-workplace</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=hr-in-2025-what-you-need-to-know-about-immigration-title-vii-affirmative-action-and-dei</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=2025-payroll-forms-form-w-2-form-w-4-and-form-941-for-2025-an-overview</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=payroll-deductions-in-2025-what-can-and-cannot-be-deducted-from-an-employee-wage</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employers-should-prepare-for-immigration-raids-in-2025-this-means-more-i-9-audits-by-ice</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employee-handbooks-2025-from-the-pump-act-to-stericycle-what-you-need-to-know</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=payroll-wage-deductions-in-2025-what-you-can-and-cannot-deduct-from-an-employees-wages</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employee-handbooks-2025-what-is-in-store-for-employers-when-updating-what-changes-will-impact-employees</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employees-vs-independent-contractors-w-2s-vs-1099s-who-should-be-an-independent-contractor-in-2025</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dos-donts-of-documenting-employee-behaviour-discipline-performance-withstanding-legal-challenges</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dos-donts-of-documenting-employee-behaviour-discipline-performance-how-to-withstand-legal-challenges</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employee-handbooks-2025-from-the-pump-act-to-stericycle-what-you-need-to-know-for-2025</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=preparing-for-2024-year-end-payroll-tax-legislation</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=understanding-the-interactive-process-under-the-ada-pda-and-pwfa</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=osha-2024-25-form-300a-300-and-301-recordkeeping-what-all-the-osha-forms-mean-compliance-violations-if-you-missed-the-deadlines</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=fringe-benefits-2025-guide-keeping-a-happy-workforce-while-not-incurring-unnecessary-payroll-and-income-tax-expenses</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=leave-abuse-under-fmla-ada-and-workers-comp-how-employers-can-deal-with-the-most-outrageous-excuses</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=osha-2024-recordkeeping-requirement-for-electronic-300a-what-are-compliance-violations-if-you-missed-the-deadlines</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=2024-guide-for-multi-state-payroll-taxation-withholding-requirements-issues-nexus</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=terminating-laying-off-employees-gracefully-respectfully-and-legally</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dos-donts-of-documenting-employee-behaviour-performance-discipline-how-to-withstand-legal-challenges</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=pay-equity-changes-for-2024-eeoc-requirements-and-nlrb-guidelines</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dols-2024-new-overtime-rules-for-exempt-vs-non-exempt-employee-mastering-the-rules-for-2024-and-beyond</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=navigating-the-overlap-between-ada-fmla-and-workers-comp-in-2024-investigating-abuse-challenges-benefits-and-legal-requirements</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=dols-new-final-rule-on-independent-contractor-vs-employee-status-benefits-drawbacks-w-2s-vs-1099s</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=employee-handbooks-nlrb-scrutiny-2024-from-the-pump-act-to-stericycle-what-you-need-to-know-for-2024</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=understanding-eeoc-final-rule-on-pregnant-workers-fairness-act-implementing-complying-pwfa-in-the-workplace</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/course-details.php?id=2024-new-form-i-9-how-to-conduct-an-i-9-internal-audit-with-all-the-changes-made-to-the-new-i-9-form</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/speaker-detail.php?id=1</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/speaker-detail.php?id=2</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/speaker-detail.php?id=3</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/speaker-detail.php?id=4</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/speaker-detail.php?id=5</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/speaker-detail.php?id=6</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/index.php</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ceuservices.com/subscription.php</loc>
+  <lastmod>2026-02-16T08:35:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>

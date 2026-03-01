@@ -48,10 +48,10 @@
                                 <h4 class="widget-title">Links</h4>
                                 <div class="inner">
                                     <ul class="footer-link link-hover">
-                                        <li><a href="about.php">About</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
-                                        <li><a href="terms-condition.php">Terms of Use</a></li>
-                                        <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                                        <li><a href="about">About</a></li>
+                                        <li><a href="contact">Contact Us</a></li>
+                                        <li><a href="terms-condition">Terms of Use</a></li>
+                                        <li><a href="privacy-policy">Privacy Policy</a></li>
                                         <li><a href="#">Refund Policy</a></li>
                                         <li><a href="#">Career </a></li>
                                     </ul>
