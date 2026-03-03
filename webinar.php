@@ -3,6 +3,7 @@
 <?php
 include "connect.php";
 include "functions.php";
+captureCampaignParams();
 ?>
 
 <head>
@@ -170,7 +171,7 @@ ORDER BY STR_TO_DATE(date, '%M %e, %Y') DESC ");
                             <div class="edu-event event-style-1">
                                 <div class="inner">
                                     <div class="thumbnail">
-                                        <a href="course-details.php?id=<?php echo $c_row['slug'] ?>">
+                                        <a href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>">
                                             <?php
                                             $images = "";
                                             if (!empty($c_row['course_thumbail'])) { 
@@ -199,7 +200,7 @@ ORDER BY STR_TO_DATE(date, '%M %e, %Y') DESC ");
                                                 <?php echo $c_row['time'] ?> EST
                                             </span>
                                         </div>
-                                        <h5 class="title"><a href="course-details.php?id=<?php echo $c_row['slug'] ?>">
+                                        <h5 class="title"><a href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>">
                                                 <?php echo $c_row['title'] ?>
                                             </a></h5>
 
@@ -213,7 +214,7 @@ ORDER BY STR_TO_DATE(date, '%M %e, %Y') DESC ");
                                         </p>
                                         <div class="read-more-btn">
                                             <a class="edu-btn btn-small btn-secondary"
-                                                href="course-details.php?id=<?php echo $c_row['slug'] ?>">Learn More <i
+                                                href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>">Learn More <i
                                                     class="icon-4"></i></a>
                                         </div>
                                     </div>

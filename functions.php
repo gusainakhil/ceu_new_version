@@ -13,6 +13,77 @@
         $data = htmlspecialchars($data);
         return $data;
     }
+
+function captureCampaignParams()
+{
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        return;
+    }
+
+    $allowed = [
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_term',
+        'utm_content',
+        'gclid',
+        'fbclid',
+        'msclkid',
+        'campaign',
+        'source',
+        'medium'
+    ];
+
+    if (empty($_SESSION['campaign_params']) || !is_array($_SESSION['campaign_params'])) {
+        $_SESSION['campaign_params'] = [];
+    }
+
+    foreach ($allowed as $key) {
+        if (isset($_GET[$key]) && $_GET[$key] !== '') {
+            $_SESSION['campaign_params'][$key] = test_input($_GET[$key]);
+        }
+    }
+}
+
+function getCampaignParams()
+{
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        return [];
+    }
+
+    if (empty($_SESSION['campaign_params']) || !is_array($_SESSION['campaign_params'])) {
+        return [];
+    }
+
+    return $_SESSION['campaign_params'];
+}
+
+function getCampaignQueryString($prefix = '?')
+{
+    $params = getCampaignParams();
+    if (empty($params)) {
+        return '';
+    }
+
+    return $prefix . http_build_query($params);
+}
+
+function appendCampaignToUrl($url)
+{
+    $params = getCampaignParams();
+    if (empty($params)) {
+        return $url;
+    }
+
+    $separator = (strpos($url, '?') !== false) ? '&' : '?';
+    return $url . $separator . http_build_query($params);
+}
+
+function campaignParamValue($key)
+{
+    $params = getCampaignParams();
+    return isset($params[$key]) ? htmlspecialchars($params[$key], ENT_QUOTES, 'UTF-8') : '';
+}
     
 function attribute($att)
 {

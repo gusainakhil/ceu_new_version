@@ -8,7 +8,6 @@ $user_id = $_POST['user_id'];
     $course_title = $_POST['course_title'];
     $hash_id = random(date('Y-m-d H:i:s'));
     $array = str_replace("'", '"', $_POST['array']);
-    $cart_counter=cart($con,$user_id);
     $old_sql = mysqli_query($con, "SELECT course_hash_id FROM cart WHERE course_hash_id='$course_hash_id' and user_id='$user_id' AND cart_status='1' ");
     if(mysqli_num_rows($old_sql)>0){
      $old_row = mysqli_fetch_assoc($old_sql);
@@ -19,7 +18,7 @@ $user_id = $_POST['user_id'];
             $response = [
                 'status' => 'Updated',
                 'courseName' => $course_title,
-                'cart_counter' => $cart_counter
+                'cart_counter' => cart($con, $user_id)
             ];
         }
     }else{
@@ -28,7 +27,7 @@ $user_id = $_POST['user_id'];
         $response = [
             'status' => 'Added to Cart',
             'courseName' => $course_title,
-            'cart_counter' => $cart_counter
+            'cart_counter' => cart($con, $user_id)
         ];
     }
     header('Content-Type: application/json');

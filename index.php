@@ -2,6 +2,7 @@
 <?php
 include "connect.php";
 include "functions.php";
+captureCampaignParams();
 ?>
 <html>
 
@@ -53,7 +54,7 @@ include "functions.php";
                                 advance your career with more than 5,800 courses, Professional Certificates, and
                                 degrees from world-class universities and companies.</p>
                             <div class="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                <a href="webinar.php" class="edu-btn">Browse <i class="icon-4"></i></a>
+                                <a href="<?php echo appendCampaignToUrl('webinar.php'); ?>" class="edu-btn">Browse <i class="icon-4"></i></a>
                             </div>
                         </div>
                     </div>
@@ -468,7 +469,7 @@ include "functions.php";
                         <div class="edu-event event-style-1">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="course-details.php?id=<?php echo $c_row['slug'] ?>">
+                                    <a href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>">
                                     <?php
                                             $images = "";
                                             if (!empty($c_row['course_thumbail'])) {
@@ -488,8 +489,8 @@ include "functions.php";
                                         <span class="day"><?php echo $day; ?></span>
                                         <span class="month"><?php echo $month; ?></span>
                                     </div>
-                                    <h5 class="title"><a href="course-details.php?id=<?php echo $c_row['slug'] ?>"></a><?php echo industry($con, $c_row['industries']) ?> </h5>
-                                    <h5 class="title";><a href="course-details.php?id=<?php echo $c_row['slug'] ?>"><?php echo $c_row['title'] ?></a> </h5>
+                                    <h5 class="title"><a href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>"></a><?php echo industry($con, $c_row['industries']) ?> </h5>
+                                    <h5 class="title";><a href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>"><?php echo $c_row['title'] ?></a> </h5>
                                   
                                     <p style="">
                                     <i class="fa fa-clock-o"
@@ -498,7 +499,7 @@ include "functions.php";
                                         <?php echo speaker($con, $c_row['speaker']) ?></span> 
                                         </p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-small btn-secondary" href="course-details.php?id=<?php echo $c_row['slug'] ?>">Learn
+                                        <a class="edu-btn btn-small btn-secondary" href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($c_row['slug'])); ?>">Learn
                                             More <i class="icon-4"></i></a>
                                     </div>
                                 </div>

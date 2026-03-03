@@ -4,6 +4,7 @@
 <?php
 include "connect.php";
 include "functions.php";
+captureCampaignParams();
 $user_id = "";
 if (!empty($_SESSION['hash_id'])) {
     $user_id = $_SESSION['hash_id'];
@@ -332,7 +333,7 @@ if (!empty($_SESSION['ip_address'])) {
                         <h1 class="title">Cart</h1>
                     </div>
                     <ul class="edu-breadcrumb">
-                        <li class="breadcrumb-item"><a href="webinar.php">Webinar</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo appendCampaignToUrl('webinar.php'); ?>">Webinar</a></li>
                         <li class="separator"><i class="icon-angle-right"></i></li>
                         <li class="breadcrumb-item active" aria-current="page">Cart</li>
                     </ul>
@@ -389,10 +390,10 @@ if (!empty($_SESSION['ip_address'])) {
                                 ?>
                                     <tr>
                                         <td class="product-remove">
-                                            <a href="delete.php?cart_id=<?php echo $row['cart_id'] ?>" class="remove-wishlist"><i class="icon-73"></i></a>
+                                            <a href="<?php echo appendCampaignToUrl('delete.php?cart_id=' . urlencode($row['cart_id'])); ?>" class="remove-wishlist"><i class="icon-73"></i></a>
                                         </td>
                                         <td class="product-title">
-                                            <a href="course-details.php?id=<?php echo $row['slug'] ?>"><?php echo $row['title'] ?></a>
+                                            <a href="<?php echo appendCampaignToUrl('course-details.php?id=' . urlencode($row['slug'])); ?>"><?php echo $row['title'] ?></a>
                                         </td>
                                         <td>
                                             <table class="table cart-table">
@@ -431,7 +432,7 @@ if (!empty($_SESSION['ip_address'])) {
                                 </tbody>
                             </table>
                             <?php ?>
-                            <a href="checkout.php?id=<?php echo $course ?>" class="edu-btn btn-medium checkout-btn">Proceed to Checkout <i class="icon-4"></i></a>
+                            <a href="<?php echo appendCampaignToUrl('checkout.php?id=' . urlencode($course)); ?>" class="edu-btn btn-medium checkout-btn">Proceed to Checkout <i class="icon-4"></i></a>
                         </div>
                     </div>
                 </div>
@@ -490,7 +491,7 @@ if (!empty($_SESSION['ip_address'])) {
                         </svg>
                         <h3><strong>Your Cart is Empty</strong></h3>
                         <h4>Add something to make me happy :)</h4>
-                        <a href="webinar.php" class="edu-btn btn-medium checkout-btn cart-btn-transform m-3" data-abc="true">Go to Webinar</a>
+                        <a href="<?php echo appendCampaignToUrl('webinar.php'); ?>" class="edu-btn btn-medium checkout-btn cart-btn-transform m-3" data-abc="true">Go to Webinar</a>
                     </div>
                 <?php } ?>
 

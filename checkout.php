@@ -5,6 +5,7 @@
 include "connect.php";
 include_once "config.php";
 include "functions.php";
+captureCampaignParams();
 $coupon = 0;
 if (!empty($_SESSION['couponPrice'])) {
     $coupon = $_SESSION['couponPrice'];
@@ -186,7 +187,7 @@ if (!empty($_SESSION['email']) && !empty($_SESSION['password'])) {
         </div>
         <section class="checkout-page-area section-gap-equal">
             <div class="container">
-                <form id="checkout_form" method="POST" action="checkout_process.php" onsubmit="disableBtn()">
+                <form id="checkout_form" method="POST" action="checkout_process.php<?php echo getCampaignQueryString(); ?>" onsubmit="disableBtn()">
                     <div class="checkout-notice">
                         <div class="coupn-box">
                             <h6 class="toggle-bar"> Have a coupon?
@@ -393,6 +394,14 @@ if (!empty($_SESSION['email']) && !empty($_SESSION['password'])) {
                             <input type="hidden" name="item_number" id="order_id" value='<?php echo $ord_id; ?>'>
                             <input type="hidden" name="amount" id="course_price" value="<?php echo $price ?>">
                             <input type="hidden" name="currency_code" id="currency_code" value="<?php echo PAYPAL_CURRENCY; ?>">
+                            <input type="hidden" name="utm_source" value="<?php echo campaignParamValue('utm_source'); ?>">
+                            <input type="hidden" name="utm_medium" value="<?php echo campaignParamValue('utm_medium'); ?>">
+                            <input type="hidden" name="utm_campaign" value="<?php echo campaignParamValue('utm_campaign'); ?>">
+                            <input type="hidden" name="utm_term" value="<?php echo campaignParamValue('utm_term'); ?>">
+                            <input type="hidden" name="utm_content" value="<?php echo campaignParamValue('utm_content'); ?>">
+                            <input type="hidden" name="gclid" value="<?php echo campaignParamValue('gclid'); ?>">
+                            <input type="hidden" name="fbclid" value="<?php echo campaignParamValue('fbclid'); ?>">
+                            <input type="hidden" name="msclkid" value="<?php echo campaignParamValue('msclkid'); ?>">
 
 
 

@@ -2,6 +2,7 @@
 <?php
 include "connect.php";
 include "functions.php";
+captureCampaignParams();
 
 if (empty($_GET['id'])) {
     header("Location: index");
@@ -64,7 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_query($con, "INSERT INTO cart (user_id,course_id,course_hash_id,hash_id,array) VALUES ('$user_id','$course_id','$course_hash_id','$hash_id','$array')");
         // echo "INSERT INTO cart (user_id,course_id,course_hash_id,hash_id,array) VALUES ('$user_id','$course_id','$course_hash_id','$hash_id','".$array."')";
     }
-    header("Refresh:0");
+    header("Location: " . appendCampaignToUrl('course-details.php?id=' . urlencode($id)));
+    exit();
 }
 
 ?>
@@ -77,22 +79,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="description" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon.png" />
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/icomoon.css" />
-    <link rel="stylesheet" href="assets/css/vendor/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/vendor/magnifypopup.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/odometer.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/animation.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/jqueru-ui-min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/tipped.min.css" />
-    <link href="assets/Calender/EventCalender.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/Favicon.png" />
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/icomoon.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/remixicon.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/magnifypopup.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/odometer.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/lightbox.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/animation.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/jqueru-ui-min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/tipped.min.css" />
+    <link href="/assets/Calender/EventCalender.css" rel="stylesheet" type="text/css" />
     <link rel="canonical" href="https://ceuservices.com/course-details.php?id=<?php echo $id; ?>" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Site Stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
     <style type="text/css">
         .progress {
             position: absolute;
@@ -290,7 +292,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <div class="edu-course-widget widget-course-summery">
                                     <div class="inner">
                                         <div class="thumbnail">
-                                            <img src="ceuadmin/assets/images/course/<?php echo $c_row['course_thumbail'] ?>" alt="Courses">
+                                            <img src="/ceuadmin/assets/images/course/<?php echo $c_row['course_thumbail'] ?>" alt="Courses">
                                         </div>
                                     </div>
                                 </div>
@@ -298,16 +300,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <ul class="shape-group">
                             <li class="shape-01 scene">
-                                <img data-depth="2.5" src="assets/images/cta/shape-10.png" alt="shape">
+                                <img data-depth="2.5" src="/assets/images/cta/shape-10.png" alt="shape">
                             </li>
                             <li class="shape-02 scene">
-                                <img data-depth="-2.5" src="assets/images/cta/shape-09.png" alt="shape">
+                                <img data-depth="-2.5" src="/assets/images/cta/shape-09.png" alt="shape">
                             </li>
                             <li class="shape-03 scene">
-                                <img data-depth="-2" src="assets/images/cta/shape-08.png" alt="shape">
+                                <img data-depth="-2" src="/assets/images/cta/shape-08.png" alt="shape">
                             </li>
                             <li class="shape-04 scene">
-                                <img data-depth="2" src="assets/images/about/shape-13.png" alt="shape">
+                                <img data-depth="2" src="/assets/images/about/shape-13.png" alt="shape">
                             </li>
                         </ul>
                     </div>
@@ -458,7 +460,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                             <div>
                                                 <hr>
-                                                <p style="color:Black;font-size:16px"><i class="fa fa-asterisk" style="font-size:18px"></i> Couldn't find the option you're looking for? Don't worry, let us know your requirements and we will get back to you SOON! <a style="color:#1AB39A;" href="contact.php"><u><b> Contact Us Now</b></u></a></p>
+                                                <p style="color:Black;font-size:16px"><i class="fa fa-asterisk" style="font-size:18px"></i> Couldn't find the option you're looking for? Don't worry, let us know your requirements and we will get back to you SOON! <a style="color:#1AB39A;" href="/contact.php"><u><b> Contact Us Now</b></u></a></p>
                                             </div>
                                             <hr>
                                             <div>
@@ -501,31 +503,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
-    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <script src="/assets/js/vendor/modernizr.min.js"></script>
     <!-- Jquery Js -->
-    <script src="assets/js/vendor/jquery.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/sal.min.js"></script>
-    <script src="assets/js/vendor/backtotop.min.js"></script>
-    <script src="assets/js/vendor/magnifypopup.min.js"></script>
-    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
-    <script src="assets/js/vendor/odometer.min.js"></script>
-    <script src="assets/js/vendor/isotop.min.js"></script>
-    <script src="assets/js/vendor/imageloaded.min.js"></script>
-    <script src="assets/js/vendor/lightbox.min.js"></script>
-    <script src="assets/js/vendor/paralax.min.js"></script>
-    <script src="assets/js/vendor/paralax-scroll.min.js"></script>
-    <script src="assets/js/vendor/jquery-ui.min.js"></script>
-    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="assets/js/vendor/svg-inject.min.js"></script>
-    <script src="assets/js/vendor/vivus.min.js"></script>
-    <script src="assets/js/vendor/tipped.min.js"></script>
-    <script src="assets/js/vendor/smooth-scroll.min.js"></script>
-    <script src="assets/js/vendor/isInViewport.jquery.min.js"></script>
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/sal.min.js"></script>
+    <script src="/assets/js/vendor/backtotop.min.js"></script>
+    <script src="/assets/js/vendor/magnifypopup.min.js"></script>
+    <script src="/assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="/assets/js/vendor/odometer.min.js"></script>
+    <script src="/assets/js/vendor/isotop.min.js"></script>
+    <script src="/assets/js/vendor/imageloaded.min.js"></script>
+    <script src="/assets/js/vendor/lightbox.min.js"></script>
+    <script src="/assets/js/vendor/paralax.min.js"></script>
+    <script src="/assets/js/vendor/paralax-scroll.min.js"></script>
+    <script src="/assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="/assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendor/svg-inject.min.js"></script>
+    <script src="/assets/js/vendor/vivus.min.js"></script>
+    <script src="/assets/js/vendor/tipped.min.js"></script>
+    <script src="/assets/js/vendor/smooth-scroll.min.js"></script>
+    <script src="/assets/js/vendor/isInViewport.jquery.min.js"></script>
     <!--Calender Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
     <!-- Site Scripts -->
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
@@ -568,7 +570,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } else {
                 $.ajax({
                     type: "POST",
-                    url: "add_to_cart.php",
+                    url: "/add_to_cart.php",
                     data: {
                         user_id: user_id,
                         course_id: course_id,
@@ -585,7 +587,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         new bootstrap.Toast(document.querySelector("#basicToast")).show();
                         // console.log(response);
                         setTimeout(function() {
-                            window.location.href = "cart.php";
+                            window.location.href = "/cart.php<?php echo getCampaignQueryString(); ?>";
                         }, 1000);
                     },
                     error: function(error) {

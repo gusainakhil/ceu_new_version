@@ -3,9 +3,9 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
-# Force HTTPS and Non-WWW Redirect to WWW
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^ceuservices\.com$ [NC]
+# Force HTTPS only on production domain
+RewriteCond %{HTTP_HOST} ^(www\.)?ceuservices\.com$ [NC]
+RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://ceuservices.com/$1 [L,R=301]
 
 # Remove .php Extension from URLs

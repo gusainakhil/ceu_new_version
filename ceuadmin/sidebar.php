@@ -62,6 +62,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                     <!-- <li><a class="ms-link" href="Failed-order">Failed order</a></li> -->
                     
                     <li><a class="ms-link" href="order-invoices">Order Invoices</a></li>
+                    <li><a class="ms-link" href="campaign-report">Campaign Report</a></li>
                 </ul>
             </li>
 
