@@ -5,19 +5,6 @@ include 'connect.php';
 include 'functions.php';
 captureCampaignParams();
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: /checkout.php');
-    exit;
-}
-
-function checkout_fail($message)
-{
-    error_log('checkout_process.php: ' . $message);
-    http_response_code(500);
-    echo 'Unable to process checkout right now. Please try again in a moment.';
-    exit;
-}
-
 
 // 2) Validate and Sanitize Input
 // Billing Details
@@ -33,19 +20,19 @@ $address1     = mysqli_real_escape_string($con, $_POST['address1']);
 $address2     = mysqli_real_escape_string($con, $_POST['address2']);
 $state        = mysqli_real_escape_string($con, $_POST['state']);
 $pin_code     = mysqli_real_escape_string($con, $_POST['pin_code']);
-$coupon_code  = mysqli_real_escape_string($con, isset($_POST['coupon_code']) ? $_POST['coupon_code'] : '');
-$coupon_price = floatval(isset($_POST['coupon_price']) ? $_POST['coupon_price'] : 0);
+$coupon_code  = mysqli_real_escape_string($con, $_POST['coupon_code'] ?? '');
+$coupon_price = floatval($_POST['coupon_price'] ?? 0);
 
 // Hidden fields from “Your Orders” section
-$course_id       = mysqli_real_escape_string($con, isset($_POST['course_id']) ? $_POST['course_id'] : '');
-$cart_hash_id    = mysqli_real_escape_string($con, isset($_POST['cart_hash_id']) ? $_POST['cart_hash_id'] : '');
-$amount          = floatval(isset($_POST['amount']) ? $_POST['amount'] : 0);            // Order Total after coupon
-$currency_code   = mysqli_real_escape_string($con, isset($_POST['currency_code']) ? $_POST['currency_code'] : '');
-$item_name       = mysqli_real_escape_string($con, isset($_POST['item_name']) ? $_POST['item_name'] : '');
-$order_id        = mysqli_real_escape_string($con, isset($_POST['item_number']) ? $_POST['item_number'] : ''); 
+$course_id       = mysqli_real_escape_string($con, $_POST['course_id']);
+$cart_hash_id    = mysqli_real_escape_string($con, $_POST['cart_hash_id']);
+$amount          = floatval($_POST['amount']);            // Order Total after coupon
+$currency_code   = mysqli_real_escape_string($con, $_POST['currency_code']);
+$item_name       = mysqli_real_escape_string($con, $_POST['item_name']);
+$order_id        = mysqli_real_escape_string($con, $_POST['item_number']); 
 
 // Selling options (string)
-$selling_options = mysqli_real_escape_string($con, isset($_POST['selling_options']) ? $_POST['selling_options'] : '');
+$selling_options = mysqli_real_escape_string($con, $_POST['selling_options']);
 
 $campaign_fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'msclkid', 'campaign', 'source', 'medium'];
 $campaign_data = [];
@@ -70,9 +57,6 @@ $datetime  = date("Y-m-d H:i:s");
 
 // Check if user exists
 $stmt = $con->prepare("SELECT id FROM user_info WHERE email = ?");
-if (!$stmt) {
-    checkout_fail('SELECT user_info prepare failed: ' . $con->error);
-}
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $stmt->store_result();
@@ -85,9 +69,6 @@ if ($stmt->num_rows > 0) {
     $upd = $con->prepare("UPDATE user_info 
         SET country=?, number=?, city=?, pin_code=?, course_id=?, address2=?, company_name=?, job_profile=?, state=?, name=?, address=? 
         WHERE email = ?");
-    if (!$upd) {
-        checkout_fail('UPDATE user_info prepare failed: ' . $con->error);
-    }
     $upd->bind_param(
         "ssssssssssss",
         $country, $number, $city, $pin_code, $course_id, $address2, $company_name, $job_profile, $state, $name_full, $address1, $email
@@ -105,9 +86,6 @@ if ($stmt->num_rows > 0) {
     $ins = $con->prepare("INSERT INTO user_info 
         (email, country, number, city, pin_code, course_id, address2, company_name, job_profile, state, name, user_id, password, datetime, hash_id, address)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    if (!$ins) {
-        checkout_fail('INSERT user_info prepare failed: ' . $con->error);
-    }
     $ins->bind_param(
         "ssssssssssssssss",
         $email, $country, $number, $city, $pin_code, $course_id, $address2, $company_name, $job_profile, $state,
@@ -128,9 +106,6 @@ $order_date   = date("Y-m-d H:i:s");
 $ins_order = $con->prepare("INSERT INTO order_details 
     (user_id, course_id, order_id, amount, payment_status, selling_options, txn_id, cc, payer_email, payment_fee, payment_gross, payment_type, handling_amount, shipping, txn_type, payment_date, hash_id, name, address, coupon_discount, cart_hash_id)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-if (!$ins_order) {
-    checkout_fail('INSERT order_details prepare failed: ' . $con->error);
-}
     
 $empty_str = '';
 $zero_val  = 0;
@@ -162,27 +137,22 @@ $ins_order->bind_param(
     $name_full,        // name
     $address1,         // address
     $coupon_price,     // coupon_discount
-    $cart_hash_id
+    $cart_hash_id,
 
 );
 
-if (!$ins_order->execute()) {
-    checkout_fail('INSERT order_details execute failed: ' . $ins_order->error);
-}
+$ins_order->execute();
 $ins_order->close();
 
 // 5) Insert Attendee Details into ceu_attende_details
-$user_names   = isset($_POST['user_name']) ? $_POST['user_name'] : array();
-$user_emails  = isset($_POST['user_email']) ? $_POST['user_email'] : array();
-$user_phones  = isset($_POST['user_phone']) ? $_POST['user_phone'] : array();
-$job_titles   = isset($_POST['jobtitle']) ? $_POST['jobtitle'] : array();
+$user_names   = $_POST['user_name']  ?? [];
+$user_emails  = $_POST['user_email'] ?? [];
+$user_phones  = $_POST['user_phone'] ?? [];
+$job_titles   = $_POST['jobtitle']   ?? [];
 
 $ins_attendee = $con->prepare("INSERT INTO ceu_attende_details 
     (name, email, number, jobtitle, order_id) 
     VALUES ( ?, ?, ?, ?, ?)");
-if (!$ins_attendee) {
-    checkout_fail('INSERT ceu_attende_details prepare failed: ' . $con->error);
-}
 $today = date("Y-m-d H:i:s");
 
 foreach ($user_names as $idx => $att_name) {
@@ -205,9 +175,6 @@ $ins_attendee->close();
 // 6) Update Cart Status to "1" (Paid) for the given cart_hash_id
 $cart_ids_arr = explode(',', $cart_hash_id);
 $upd_cart = $con->prepare("UPDATE cart SET cart_status='1', user_id=? WHERE hash_id=? AND cart_status='0'");
-if (!$upd_cart) {
-    checkout_fail('UPDATE cart prepare failed: ' . $con->error);
-}
 foreach ($cart_ids_arr as $cid) {
     $upd_cart->bind_param("ss", $user_id, $cid);
     $upd_cart->execute();
