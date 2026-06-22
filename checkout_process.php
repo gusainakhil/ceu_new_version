@@ -95,8 +95,11 @@ if ($stmt->num_rows > 0) {
     $user_id = $ins->insert_id;
     $ins->close();
     // Send welcome email to new user
-
-    sendemail($con, $email, $passwd);
+    try {
+        sendemail($con, $email, $passwd);
+    } catch (Exception $e) {
+        error_log("Welcome email failed for $email: " . $e->getMessage());
+    }
 }
 
 
